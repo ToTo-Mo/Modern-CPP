@@ -1,0 +1,30 @@
+{
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "cl.exe build active file",
+			"command": "cl.exe",
+			"args": [
+			  "/Zi",
+			  "/EHsc",
+			  "/Fe:",
+			  "${fileDirname}\\${fileBasenameNoExtension}.exe",
+			  "${file}"
+			],
+			"problemMatcher": ["$msCompile"],
+			"group": {
+			  "kind": "build",
+			  "isDefault": true
+			}
+		  },
+        {
+            "type": "shell",
+            "label": "execute",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "group": "test",
+            "presentation": {
+                "clear": true
+            }
+		}
+	]
+}
