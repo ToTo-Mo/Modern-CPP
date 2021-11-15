@@ -27,7 +27,12 @@
 		{
 			"type": "shell",
 			"label": "execute",
-			"command": "${fileDirname}/${fileBasenameNoExtension}",
+			"command": "%EXECUTE%",
+			"options": {
+				"env" : {
+					"EXECUTE" : "chcp 65001 && \"${fileDirname}/${fileBasenameNoExtension}\""
+				}
+			},
 			"group": "test",
 			"presentation": {
 				"clear": true
