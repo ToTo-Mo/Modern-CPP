@@ -69,7 +69,7 @@
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "C:\\msys64\\mingw64\\bin"
 			},
 			"problemMatcher": [
 				"$gcc"
